@@ -66,6 +66,9 @@ header .auth a.login span {
   transform: rotateZ(-180deg);
   margin-left: 5px;
 }
+header .auth a.login:hover {
+  color: var(--yellow);
+}
 
 .bar_icon {
   cursor: pointer;
@@ -228,6 +231,11 @@ header .auth a.login span {
     gap: 15px;
   }
 }
+@media (min-width: 768.1px) and (max-width: 990.9px) {
+  .donate_contact {
+    align-items: flex-end !important;
+  }
+}
 @media (max-width: 768px) {
   .aid_img {
     width: 80%;
@@ -273,7 +281,7 @@ header .auth a.login span {
 /* main-carousel */
 .main-carousel {
   padding: 40px 0;
-  height: 600px;
+  height: 650px;
 }
 .carousel-cell {
   width: auto;
@@ -305,4 +313,19 @@ header .auth a.login span {
 }
 
 footer {
+  background-color: #575757;
+}
+footer h4 {
+  color: #cb9a43;
+}
+.footer_contact {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .footer_wrap {
+    align-items: initial !important;
+  }
+  footer .social_links {
+    margin-bottom: 15px;
+  }
 }
