@@ -5,9 +5,18 @@ $(document).ready(function () {
   $('.close_icon').on('click', function () {
     $('.side_bar').animate({ right: '-210px' }, 400);
   })
-
-  // carousel
-  $('.main-carousel').flickity({
+  // top carousel
+  $('.top-carousel').flickity({
+    // options
+    adaptiveHeight: true,
+    freeScroll: true,
+    wrapAround: true,
+    prevNextButtons:true,
+    pageDots: true,
+    autoPlay: true,
+  });
+  // bottom carousel
+  $('.bottom-carousel').flickity({
     // options
     adaptiveHeight: true,
     freeScroll: true,
@@ -15,4 +24,5 @@ $(document).ready(function () {
     pageDots: false,
     autoPlay: true
   });
+
 })
