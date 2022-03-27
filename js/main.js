@@ -11,7 +11,7 @@ $(document).ready(function () {
     adaptiveHeight: true,
     freeScroll: true,
     wrapAround: true,
-    prevNextButtons:true,
+    prevNextButtons: true,
     pageDots: true,
     autoPlay: true,
   });
